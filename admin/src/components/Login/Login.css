@@ -1,0 +1,96 @@
+.login {
+  position: relative;
+  /* height: calc(100vh - 100px); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: top;
+  margin-bottom: 1rem;
+  border: 5px solid gray;
+  border-style: dashed;
+  animation: borderAnimation 5s infinite;
+  transition: border-style 0.3s ease;
+  margin-top: 40px;
+}
+
+.login h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.login p {
+  font-weight: 500;
+  color: #555;
+  margin: 1rem 0;
+}
+
+.login p a {
+  font-weight: 700;
+
+  color: rgb(93, 124, 73);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-style: dashed;
+  }
+
+  25% {
+    border-style: dotted;
+  }
+
+  50% {
+    border-style: inset;
+  }
+
+  75% {
+    border-style: solid;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
+.login button {
+  padding: 10px 20px;
+  background-color: rgb(78, 78, 203);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px #333;
+  transition: 0.2s ease-in-out;
+  width: 450px;
+}
+
+.login button:is(:hover, :active) {
+  background-color: rgb(0, 0, 208);
+}
+
+.login button:active {
+  transform: scale(0.9);
+}
+
+.login-guest {
+  margin-top: 20px;
+  background-color: #fb2525 !important;
+}
+.login-guest:hover {
+  background-color: #d00404 !important;
+}

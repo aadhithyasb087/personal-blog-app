@@ -1,0 +1,43 @@
+.aside-left {
+  position: fixed;
+  top: 100px;
+  left: -370px;
+  width: 130px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9;
+  box-shadow: 0 0 10px #c4c4c4;
+  transition: 0.5s ease-in-out;
+}
+.aside-left.open {
+  left: 0;
+}
+
+.aside-left ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.nav-notactive {
+  color: black;
+}
+
+.navactive {
+  background-color: #7e37d8;
+  color: #fff;
+}
+
+.aside-left ul li svg {
+  font-size: 22px;
+}
+
+.aside-left ul li span {
+  font-size: 20px;
+}
+
+.aside-left ul li:hover {
+  background-color: #7e37d8;
+  color: #fff;
+}

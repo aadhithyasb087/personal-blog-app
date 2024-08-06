@@ -1,0 +1,211 @@
+.dashboard-topfour-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  /* gap: 1rem; */
+}
+.dashboard-four-card {
+  position: relative;
+  width: 280px;
+  height: 250px;
+  background-image: linear-gradient(to bottom right, #9358e0, #571f9e);
+  box-shadow: 2px 12px 26px 3px rgba(126, 55, 216, 0.3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.dashboard-four-card:nth-child(2) {
+  background-image: linear-gradient(to bottom right, #ff9cc3, #fd3484);
+  box-shadow: 2px 12px 26px 3px rgba(254, 128, 178, 0.3);
+}
+
+.dashboard-four-card:nth-child(3) {
+  background-image: linear-gradient(to bottom right, #ffd85d, #ffc200);
+  box-shadow: 2px 12px 26px 3px rgba(255, 199, 23, 0.3);
+}
+
+.dashboard-four-card:nth-child(4) {
+  background-image: linear-gradient(to bottom right, #00d2d7, #07b2dd);
+  box-shadow: 2px 12px 26px 3px rgba(6, 181, 221, 0.3);
+}
+
+.dashboard-four-card h2 {
+  font-size: 2rem;
+  text-shadow: 0 0 10px #999;
+}
+
+.dashboard-four-card span {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #5d66bda7;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.dashboard-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftyear-overview {
+  position: relative;
+  width: 65%;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #d4d4d4;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.leftyear-overview div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-blog-category {
+  position: relative;
+  width: 32%;
+  height: 600px;
+  border-radius: 50px;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 0 10px #d4d4d4;
+  overflow: hidden;
+}
+
+.leftyear-overview canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.creative-dots {
+  padding-left: 0px;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-right: 0px;
+}
+
+.creative-dots .big-dot {
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 80% !important;
+  background-color: #7e37d8 !important;
+  color: #fff;
+}
+
+.creative-dots .semi-big-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -14px;
+  top: 42px;
+  border-radius: 100%;
+  background-color: #fe80b2 !important;
+  color: #fff;
+}
+
+.creative-dots .medium-dot {
+  position: absolute;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  left: 18px;
+  top: -5px;
+  background-color: #ffc717 !important;
+  color: #fff;
+}
+
+.creative-dots .semi-medium-dot {
+  position: absolute;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  left: 20px;
+  top: 38px;
+  background-color: #06b5dd !important;
+  color: #fff;
+}
+
+.creative-dots .semi-small-dot {
+  position: absolute;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  left: 32px;
+  top: 23px;
+  background-color: #fe80b2 !important;
+  color: #fff;
+}
+
+.creative-dots .small-dot {
+  position: absolute;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  left: 42px;
+  top: 37px;
+  background-color: #7e37d8 !important;
+  color: #fff;
+}
+
+.leftyear-overview h3,
+.right-blog-category h3 {
+  font-weight: 800;
+}
+.right-blog-category h3 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.leftyear-overview h3 span {
+  color: #158df7;
+  font-weight: 700;
+}
+
+.blogs-category {
+  width: 100%;
+  height: 100%;
+}
+
+.blogs-category table {
+  width: 100%;
+  color: #000;
+}
+
+.blogs-category thead tr {
+  background-color: rgb(230, 230, 230);
+  color: #000;
+  font-weight: 900;
+}
+
+.blogs-category td {
+  list-style: auto;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.blogs-category tbody tr:hover {
+  background-color: #e3e3e3;
+}
