@@ -17,18 +17,14 @@ import { useUser } from "./contexts/UserContext";
 function App() {
   const { saveUser } = useUser();
   const { user } = useUser();
-    const navigate = useNavigate();
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getUser = JSON.parse(sessionStorage.getItem("user"));
 
-    if (getUser.displayName)
-    {
-      
+    if (getUser) {
       saveUser({ displayName: "Guest", email: "guest@gmail.com" });
       navigate("/");
-
     }
   }, []);
   return (

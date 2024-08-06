@@ -208,17 +208,12 @@ function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="https://portfolio-iota-livid-22.vercel.app/home">
+              <a href="https://portfolio-iota-livid-22.vercel.app/home">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to={{ pathname: "https://admin-asb-blog-app.vercel.app/" }}
-                target="_blank"
-              >
-                Admin Page
-              </Link>
+              <a href="https://admin-asb-blog-app.vercel.app/">Admin Page</a>
             </li>
           </ul>
           <hr />
