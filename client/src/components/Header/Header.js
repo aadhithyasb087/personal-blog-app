@@ -213,7 +213,10 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="https://admin-asb-blog-app.vercel.app/">
+              <Link
+                to={{ pathname: "https://admin-asb-blog-app.vercel.app/" }}
+                target="_blank"
+              >
                 Admin Page
               </Link>
             </li>
