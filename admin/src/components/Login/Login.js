@@ -116,7 +116,7 @@ function Login() {
       <img src={ProfileImg} alt="img" className="profile-img" />
       <h1>Welcome Admin of the ASB Blogs 👋</h1>
       <p>
-        Visit our main website <a href="/">ASB Blogs</a>
+        Visit our main website <a href="https://asb-blog-app.vercel.app/">ASB Blogs</a>
       </p>
       <button onClick={signIn}>Login with google</button>
       <button onClick={guestSignIn} className="login-guest">
