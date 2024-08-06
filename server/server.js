@@ -22,6 +22,13 @@ app.get("/", (req, res) => {
 
 app.use("/api", router);
 
+app.use((err, req, res, next) => {
+  console.error("Error Stack:", err.stack);
+  res
+    .status(500)
+    .json({ message: "Internal Server Error", error: err.message });
+});
+
 app.listen(PORT, () => {
   console.log("Server running of port " + PORT);
 });
