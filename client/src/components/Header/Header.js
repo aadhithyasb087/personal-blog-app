@@ -213,7 +213,9 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/">Admin Page</Link>
+              <Link to="https://admin-asb-blog-app.vercel.app/">
+                Admin Page
+              </Link>
             </li>
           </ul>
           <hr />
