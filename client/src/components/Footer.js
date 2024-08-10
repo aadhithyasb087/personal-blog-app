@@ -43,16 +43,27 @@ function Footer() {
         <div className="q_links">
           <h3>Social Media</h3>
           <ul>
-            <a href="https://github.com/aadhithyasb087">
+            <a
+              href="https://github.com/aadhithyasb087"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>Github</li>
             </a>
-            <a href="https://www.linkedin.com/in/aadhithyasb1">
+            <a
+              href="https://www.linkedin.com/in/aadhithyasb1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>LinkedIn</li>
             </a>
-            <a href="https://www.instagram.com/aadhithya_sb/">
+            <a
+              href="https://www.instagram.com/aadhithya_sb/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>Instagram</li>
             </a>
-           
           </ul>
         </div>
       </div>

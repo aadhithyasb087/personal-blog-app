@@ -224,17 +224,31 @@ function MainSection() {
                 </h4>
                 <div className="social_talks flex flex-center gap-1 mt-2">
                   <div className="st_icon">
-                    <Link to="https://github.com/aadhithyasb087">
+                    <a
+                      href="https://github.com/aadhithyasb087"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaGithub />
-                    </Link>
+                    </a>
                   </div>
                   <div className="st_icon">
-                    <Link to="https://www.linkedin.com/in/aadhithyasb1">
+                    <a
+                      href="https://www.linkedin.com/in/aadhithyasb1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <CiLinkedin />
-                    </Link>
+                    </a>
                   </div>
                   <div className="st_icon">
-                    <FaInstagram />
+                    <a
+                      href="https://www.instagram.com/aadhithya_sb/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagram />
+                    </a>
                   </div>
                 </div>
               </div>

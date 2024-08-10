@@ -107,17 +107,22 @@ function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link
-                  to={{
-                    pathname: "https://portfolio-iota-livid-22.vercel.app/home",
-                  }}
+                <a
+                  href="https://portfolio-iota-livid-22.vercel.app/home"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/">Admin Page</Link>
+                <a
+                  href="https://admin-asb-blog-app.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Admin Page
+                </a>
               </li>
             </ul>
             <div className="navlist_mobile_ul">
@@ -208,12 +213,22 @@ function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="https://portfolio-iota-livid-22.vercel.app/home">
+              <a
+                href="https://portfolio-iota-livid-22.vercel.app/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="https://admin-asb-blog-app.vercel.app/">Admin Page</a>
+              <a
+                href="https://admin-asb-blog-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Admin Page
+              </a>
             </li>
           </ul>
           <hr />

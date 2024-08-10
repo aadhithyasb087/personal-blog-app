@@ -13,13 +13,24 @@ function HeaderSection() {
           </h1>
           <h3>Specialist in javascript and react.js</h3>
           <div className="flex gap-2">
-            <a href="https://portfolio-iota-livid-22.vercel.app/contact" >
-              Contact Me
-            </a>
-            <a href="https://portfolio-iota-livid-22.vercel.app/home">
-              About Me
-            </a>
-            
+            <button>
+              <a
+                href="https://portfolio-iota-livid-22.vercel.app/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact Me
+              </a>
+            </button>
+            <button>
+              <a
+                href="https://portfolio-iota-livid-22.vercel.app/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About Me
+              </a>
+            </button>
           </div>
         </div>
         <div className="rightheader_img">
