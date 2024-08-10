@@ -11,13 +11,13 @@ const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 8800;
 
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res, next) => {
+app.get("/", (req, res) => {
   res.send("API Running!");
-  next();
 });
 
 app.use("/api", router);

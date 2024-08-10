@@ -3,7 +3,7 @@ import Blog from "../models/blogModel.js";
 
 const router = express.Router();
 
-router / get("/trial", (req, res) =>
+router.get("/trial", (req, res) =>
 { 
   res.json({"id":"ggdg"})
 })
