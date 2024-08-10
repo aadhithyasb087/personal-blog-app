@@ -3,6 +3,11 @@ import Blog from "../models/blogModel.js";
 
 const router = express.Router();
 
+router / get("/trial", (req, res) =>
+{ 
+  res.json({"id":"ggdg"})
+})
+
 router.get("/id/:id", async (req, res,next) => {
   try {
     if (req.params?.id) {
