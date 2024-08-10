@@ -14,12 +14,9 @@ function AddBlog() {
   useEffect(() => {
     if (!user) {
       navigate("/login");
-    }
-    const fetchData = () => {
+    } else {
       setLoading(false);
-    };
-
-    return () => fetchData();
+    }
   }, [user]);
   if (loading) {
     return (

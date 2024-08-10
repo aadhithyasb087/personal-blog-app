@@ -51,12 +51,9 @@ function Draft() {
   useEffect(() => {
     if (!user) {
       navigate("/login");
-    }
-    const fetchDataLoading = () => {
+    } else {
       setLoadingStart(false);
-    };
-
-    return () => fetchDataLoading();
+    }
   }, [user]);
   if (loadingStart) {
     return (

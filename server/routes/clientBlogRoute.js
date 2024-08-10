@@ -66,9 +66,7 @@ router.get("/allblogs", async (req, res, next) => {
     const allBlogs = await Blog.find({ status: "publish" }).sort({
       createdAt: -1,
     });
-    if (!allBlogs || allBlogs.length === 0) {
-      return res.status(404).json({ message: "No blogs found" });
-    }
+   
     res.status(200).json(allBlogs);
   } catch (error) {
     console.error("Error fetching blogs:", error);

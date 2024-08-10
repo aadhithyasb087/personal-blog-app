@@ -19,12 +19,9 @@ function Settings() {
   useEffect(() => {
     if (!user) {
       navigate("/login");
-    }
-    const fetchData = () => {
+    } else {
       setLoadingStart(false);
-    };
-
-    return () => fetchData();
+    }
   }, [user]);
   if (loadingStart) {
     return (
