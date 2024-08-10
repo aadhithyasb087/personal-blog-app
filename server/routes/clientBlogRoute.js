@@ -68,9 +68,11 @@ router.get("/blog/:slug", async (req, res,next) => {
 
 router.get("/allblogs", async (req, res,next) => {
   try {
-    const allBlogs = await Blog.find();
-    const currentBlogs = allBlogs.filter((blog) => blog.status === "publish");
-    res.json(currentBlogs.reverse());
+    const allBlogs = await Blog.find({ status: "publish" }).sort({
+      createdAt: -1,
+    });
+    // const currentBlogs = allBlogs.filter((blog) => blog.status === "publish")
+    res.json(allBlogs);
   } catch (error) {
     console.error("Error fetching blogs:", error);
     next(error);
