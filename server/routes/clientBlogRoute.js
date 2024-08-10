@@ -3,12 +3,7 @@ import Blog from "../models/blogModel.js";
 
 const router = express.Router();
 
-router.get("/trial", (req, res) =>
-{ 
-  res.json({"id":"ggdg"})
-})
-
-router.get("/id/:id", async (req, res,next) => {
+router.get("/id/:id", async (req, res, next) => {
   try {
     if (req.params?.id) {
       res.json(await Blog.find({ _id: req.params.id }));
@@ -21,7 +16,7 @@ router.get("/id/:id", async (req, res,next) => {
   }
 });
 
-router.get("/category/:category", async (req, res,next) => {
+router.get("/category/:category", async (req, res, next) => {
   try {
     if (req.params?.category) {
       const catg = await Blog.find({ category: req.params.category });
@@ -36,7 +31,7 @@ router.get("/category/:category", async (req, res,next) => {
   }
 });
 
-router.get("/tags/:tags", async (req, res,next) => {
+router.get("/tags/:tags", async (req, res, next) => {
   try {
     if (req.params?.tags) {
       const tags = await Blog.find({ tags: req.params.tags });
@@ -51,7 +46,7 @@ router.get("/tags/:tags", async (req, res,next) => {
   }
 });
 
-router.get("/blog/:slug", async (req, res,next) => {
+router.get("/blog/:slug", async (req, res, next) => {
   try {
     if (req.params?.slug) {
       const slug = await Blog.find({ slug: req.params.slug });
@@ -66,13 +61,15 @@ router.get("/blog/:slug", async (req, res,next) => {
   }
 });
 
-router.get("/allblogs", async (req, res,next) => {
+router.get("/allblogs", async (req, res, next) => {
   try {
     const allBlogs = await Blog.find({ status: "publish" }).sort({
       createdAt: -1,
     });
-    // const currentBlogs = allBlogs.filter((blog) => blog.status === "publish")
-    res.json(allBlogs);
+    if (!allBlogs || allBlogs.length === 0) {
+      return res.status(404).json({ message: "No blogs found" });
+    }
+    res.status(200).json(allBlogs);
   } catch (error) {
     console.error("Error fetching blogs:", error);
     next(error);
